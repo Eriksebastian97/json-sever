@@ -4,10 +4,10 @@ export const nuevoCliente = async cliente =>{
    
   try{
      await fetch(url , {
-    method:"POST",
-    body: JSON.stringify( cliente),
-    Headers: {
-        " Content-Type":"application/json"
+      method:"POST",
+      body: JSON.stringify( cliente),
+      headers: {
+        "Content-Type":"application/json"
     }
    });
    window.location.href = "index.html"
